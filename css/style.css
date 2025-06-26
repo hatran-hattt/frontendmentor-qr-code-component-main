@@ -1,5 +1,7 @@
 :root {
   --background-color: #d5e1ef;
+  --heading-text-color: #1f314f;
+  --content-text-color: #68778d;
 }
 
 body {
@@ -11,6 +13,10 @@ body {
 
   background-color: var(--background-color);
   font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  color: var(--heading-text-color);
 }
 
 .card {
@@ -34,6 +40,7 @@ body {
   font-weight: 700;
   font-size: 1.375em;
   line-height: 1.2;
+  color: var(--heading-text-color);
 }
 .card > .description {
   text-align: center;
@@ -44,12 +51,14 @@ body {
   font-size: 1em;
   line-height: 1.4;
   letter-spacing: 0.01em;
+  color: var(--content-text-color);
 }
 
 .attribution {
   margin-block-start: 1.25rem;
   font-size: 0.7em;
   text-align: center;
+  color: var(--content-text-color);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
