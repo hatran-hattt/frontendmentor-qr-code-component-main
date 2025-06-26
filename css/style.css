@@ -1,3 +1,7 @@
+:root {
+  --background-color: #d5e1ef;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,7 @@ body {
   justify-content: center;
   min-height: 100vh;
 
-  background-color: #d5e1ef;
+  background-color: var(--background-color);
   font-family: "Outfit", sans-serif;
 }
 
@@ -13,35 +17,38 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 320px;
-  border-radius: 20px;
-  padding: 16px 16px 40px 16px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); /* Add this line */
+  width: 20rem;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  padding-block-end: 2.5rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.15); /* Add this line */
 }
 .card > img {
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .card > .title {
   text-align: center;
-  padding: 0px 16px;
-  margin: 24px 0px 0px 0px;
+  padding: 0 1rem;
+  margin: 0;
+  margin-block-start: 1.5rem;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 120%;
+  font-size: 1.375em;
+  line-height: 1.2;
 }
 .card > .description {
   text-align: center;
-  padding: 0px 16px;
-  margin: 16px 0px 0px 0px;
+  padding: 0 1rem;
+  margin: 0;
+  margin-block-start: 1rem;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 
 .attribution {
-  margin-top: 20px;
-  font-size: 11px;
+  margin-block-start: 1.25rem;
+  font-size: 0.7em;
   text-align: center;
 }
 .attribution a {
